@@ -14,6 +14,7 @@ public:
     bool isRunning();
     void pollEvents();
     void draw(sf::VertexArray vertexArray);
+    void draw(sf::CircleShape shape);
     void clear();
     void clear(sf::Color);
     void display();
