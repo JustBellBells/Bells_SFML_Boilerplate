@@ -2,13 +2,14 @@
 #define WINDOW_H
 
 #pragma once
-#include <SFML/Graphics.hpp>
+#include "include/SFML-2.5.1/include/SFML/Graphics.hpp"
 
 class Window
 {
 
 public:
     Window(int width, int height);
+    Window();
     ~Window();
     bool isRunning();
     void pollEvents();

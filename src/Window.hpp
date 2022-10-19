@@ -9,8 +9,18 @@ Window::Window(int width, int height)
     this->window->setView(sf::View(sf::Vector2f(0, 0), sf::Vector2f(10.f, 10.f)));
 }
 
+Window::Window()
+{
+    this->width = 800;
+    this->height = 600;
+    this->isResized = false;
+    this->window = new sf::RenderWindow(sf::VideoMode(width, height), "SFML-app");
+    this->window->setView(sf::View(sf::Vector2f(0, 0), sf::Vector2f(10.f, 10.f)));
+}
+
 Window::~Window()
 {
+    delete this->window;
 }
 
 bool Window::isRunning()
