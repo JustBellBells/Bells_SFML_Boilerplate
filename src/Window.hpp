@@ -57,6 +57,11 @@ void Window::clear()
     this->window->clear(sf::Color::Black);
 }
 
+void Window::clear(sf::Color color)
+{
+    this->window->clear(color);
+}
+
 void Window::display()
 {
     this->window->display();

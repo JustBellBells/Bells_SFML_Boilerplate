@@ -2,7 +2,7 @@
 #define WINDOW_H
 
 #pragma once
-#include "include/SFML-2.5.1/include/SFML/Graphics.hpp"
+#include "../include/SFML-2.5.1/include/SFML/Graphics.hpp"
 
 class Window
 {
@@ -15,6 +15,7 @@ public:
     void pollEvents();
     void draw(sf::VertexArray vertexArray);
     void clear();
+    void clear(sf::Color);
     void display();
 
     sf::Vector2i size();
