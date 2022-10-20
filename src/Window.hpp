@@ -72,10 +72,19 @@ void Window::draw(sf::VertexArray vertexArray)
     this->window->draw(vertexArray);
 }
 
-void Window::draw(sf::CircleShape shape)
-
+void Window::draw(sf::CircleShape circleShape)
 {
-    this->window->draw(shape);
+    this->window->draw(circleShape);
+}
+
+void Window::draw(sf::RectangleShape rectShape)
+{
+    this->window->draw(rectShape);
+}
+
+void Window::draw(sf::ConvexShape convexShape)
+{
+    this->window->draw(convexShape);
 }
 
 sf::Vector2i Window::size()
