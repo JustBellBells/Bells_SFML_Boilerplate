@@ -1,16 +1,16 @@
 # Bells' SFML Boilerplate
 
-This is a very simplistic boilerplate for SFML that utilizes makefiles to compile using the g++ compiler.
+This is a very simplistic boilerplate for SFML that compiles with MinGW-W64 and GNU make.
 
 ## Requirements
 
-- Bash shell
-- MinGW-W64 11.2.0 or higher
-- GNU Make 4.3 or higher
+- [Git Bash](https://git-scm.com/)
+- [MinGW-W64 11.2.0 or higher](https://www.mingw-w64.org/)
+- [GNU make 4.3 or higher](https://www.gnu.org/software/make/)
 
 ## Usage
 
-`Make` will compile all c++ files within the src directory, outputting to the build directory and will launch the program.<br>
-`Make compile` will *only* compile and not launch the program.<br>
-`Make run` will *only* launch the program, without recompiling.<br>
-`Make clean` will clean the build directory of any executables.<br>
+`make`: Compile and launch application.<br>
+`make compile`: Compile application.<br>
+`make run`: Launch application.<br>
+`make clean`: clean build directory of all executables.<br>
